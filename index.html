@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Encriptador Alura Challenge</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="cajaprincipal">
+            <div class="logo">
+                <img src="imagenes/Logo.png">
+                <p>Encriptador de mensajes</p>
+            </div>
+            <div class="izquierdo">
+                <input id="textoingresado" class="textoingresado" placeholder="Ingrese el texto aquí.">
+            </div>
+            <div class="derecho">
+                <img id="imagenderecha" src="imagenes/lupa.png">
+                <h1 id="textoej">Ningún texto ha sido encontrado.</h1>
+                <textarea id="textoej2">Aquí estará el resultado.</textarea>
+                <button id="bcopiar" type="button" name="button" onclick="copiar()">Copiar</button>
+            </div>
+            <div>
+                <button id="bencriptar" type="button" name="button" onclick="encriptar()">Encriptar</button>
+                <button id="bdesencriptar" type="button" name="button" onclick="desencriptar()">Desencriptar</button>
+                <p class="advertencia">&#10037;Solo minusculas y sin acentos.</p>
+            </div>
+            
+        </div>
+
+        
+    </body>
+</html>
